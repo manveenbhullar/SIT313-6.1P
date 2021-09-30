@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>6.1P</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type='text/css' href="/css/result.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td colspan="7" class="lable">Expert table</td>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%expertsList.forEach(expert=> {%>
+                    <tr>
+                        <th>
+                            <%= expert._id %>
+                        </th>
+                        <td>
+                            <%=expert.fname %>
+                        </td>
+                        <td>
+                            <%=expert.lname %>
+                        </td>
+                        <td>
+                            <%=expert.email %>
+                        </td>
+                        <td>
+                            <%=expert.password %>
+                        </td>
+                        <td>
+                            <%=expert.address %>
+                        </td>
+                        <td>
+                            <%=expert.phone_num %>
+                        </td>
+                    </tr>
+                    <%})%>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

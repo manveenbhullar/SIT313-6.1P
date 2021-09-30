@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer Registration Form</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <h2>Create an iService Account</h2>
+        <br>
+        <form action="/" method="POST">
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="first_name"><b>First Name*</b></label>
+                    <input type="text" class="form-control" name="fname" placeholder="First Name">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="first_name"><b>Last Name*</b></label>
+                    <input type="text" class="form-control" name="lname" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="E-mail"><b>Email*</b></label>
+                <input type="text" class="form-control" name="email" placeholder="First Name" >
+            </div>
+
+            <div class="form-group">
+                <label for="passWord"><b>Password*</b></label>
+                <input type="password" class="form-control" name="password" placeholder="Password" >
+            </div>
+
+            <div class="form-group">
+                <label for="address"><b>Address*</b></label>
+                <input type="text" class="form-control" name="Address" placeholder="Address">
+            </div>
+
+            <div class="form-group">
+                <label for="phone"><b>Mobile Phone*</b></label>
+                <input type="number" class="form-control" name="phone_num" placeholder="Mobile number" >
+            </div>
+            <br>
+
+            <div class="col-md-12 text center">
+                <button type="submit" class="btn btn-primary btn-lg">Register</button>
+            </div>
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
