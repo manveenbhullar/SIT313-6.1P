@@ -12,7 +12,7 @@ const expertSchema = new mongoose.Schema(
             type: String,
             validate(value) {
                 if (!validator.isEmail(value)) {
-                    throw new Error('Emailis not valid')
+                    throw new Error('Email is not valid')
                 }
             }
         },
