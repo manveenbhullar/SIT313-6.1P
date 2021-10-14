@@ -49,7 +49,7 @@ app.route('/expertID')
     .get((req, res) => {
         Expert.find({}, function (err, expert) {
             res.render('result', {
-                expertsList: experts
+                expertsList: expert
             })
         })
     })
